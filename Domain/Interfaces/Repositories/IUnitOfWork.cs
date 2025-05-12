@@ -1,0 +1,139 @@
+﻿namespace Domain.Interfaces.Repositories
+{
+    public interface IUnitOfWork
+    {
+        IUserRepository UserRepository { get; }
+        IFunctionUserRepository FunctionUserRepository { get; }
+        ICidadeRepository CidadeRepository { get; }
+        IEstadoRepository EstadoRepository { get; }
+        IPaisRepository PaisRepository { get; }
+        IBancoRepository BancoRepository { get; }
+        ICargoRepository CargoRepository { get; }
+        IDepartamentoRepository DepartamentoRepository { get; }
+        ITipoConsumidorRepository TipoConsumidorRepository { get; }
+        ICstIcmsOrigemMaterialRepository CST_ICMS_Origem_MaterialRepository { get; }
+        ICstIcmsRepository CST_ICMSRepository { get; }
+        ICstIpiRepository CST_IPIRepository { get; }
+        IPisRepository PisRepository { get; }
+        ICofinsRepository CofinsRepository { get; }
+        IFeriadoRepository FeriadoRepository { get; }
+        ICentroCustoRepository CentroCustoRepository { get; }
+        IPessoaRepository PessoaRepository { get; }
+        IProdutoRepository ProdutoRepository { get; }
+        IEnderecoRepository EnderecoRepository { get; }
+        ITelefoneRepository TelefoneRepository { get; }
+        IEmailRepository EmailRepository { get; }
+        IContatoRepository ContatoRepository { get; }
+        IRelacionaPessoaContatoEnderecoRepository RelacionaPessoaContatoEnderecoRepository { get; }
+        IRelacionaPessoaContatoTelefoneRepository RelacionaPessoaContatoTelefoneRepository { get; }
+        IRelacionaDadosCobrancaEnderecoRepository RelacionaDadosCobrancaEnderecoRepository { get; }
+        IRelacionaDadosCobrancaTelefoneRepository RelacionaDadosCobrancaTelefoneRepository { get; }
+        IDadosCobrancaRepository DadosCobrancaRepository { get; }
+        IAnaliseCreditoRepository AnaliseCreditoRepository { get; }
+        IUnidadeMedidaRepository UnidadeMedidaRepository { get; }
+        ISetorProdutoRepository SetorProdutoRepository { get; }
+        ITipoProdutoRepository TipoProdutoRepository { get; }
+        IRelacionaPessoaEnderecoRepository RelacionaPessoaEnderecoRepository { get; }
+        IRelacionaPessoaTelefoneRepository RelacionaPessoaTelefoneRepository { get; }
+        IRelacionaPessoaEmailRepository RelacionaPessoaEmailRepository { get; }
+        IRegiaoRepository RegiaoRepository { get; }
+        IOrigemRepository OrigemRepository { get; }
+        ISegmentoClienteRepository SegmentoClienteRepository { get; }
+        ISegmentoEstrategicoRepository SegmentoEstrategicoRepository { get; }
+        IVendaRepository VendaRepository { get; }
+        IImpressaoEspecialRepository ImpressaoEspecialRepository { get; }
+        IVendaItemRepository VendaItemRepository { get; }
+        IGrupoRepository GrupoRepository { get; }
+        ICodigoImportacaoRepository CodigoImportacaoRepository { get; }
+        ISetorRepository SetorRepository { get; }
+        IRuaRepository RuaRepository { get; }
+        ISubgrupoRepository SubgrupoRepository { get; }
+        IPrateleiraRepository PrateleiraRepository { get; }
+        INcmRepository NcmRepository { get; }
+        IFamiliaRepository FamiliaRepository { get; }
+        IClasseReajusteRepository ClasseReajusteRepository { get; }
+        IDesgastePolimentoRepository DesgastePolimentoRepository { get; }
+        IOrigemMaterialRepository OrigemMaterialRepository { get; }
+        ITipoPrecoRepository TipoPrecoRepository { get; }
+        IFaturaRepository FaturaRepository { get; }
+        IFaturaItemRepository FaturaItemRepository { get; }
+        ICfopRepository CfopRepository { get; }
+        IFuncionalidadeRepository FuncionalidadeRepository { get; }
+        INivelAcessoRepository NivelAcessoRepository { get; }
+        IRelacionaUsuarioFuncionalidadeNivelAcessoRepository RelacionaUsuarioFuncionalidadeNivelAcessoRepository { get; }
+        IPrecoTributacaoRepository PrecoTributacaoRepository { get; }
+        IComposicaoRepository ComposicaoRepository { get; }
+        IRelacionaFuncionalidadeNivelAcessoRepository RelacionaFuncionalidadeNivelAcessoRepository { get; }
+        IRelacionaProdutoFornecedorRepository RelacionaProdutoFornecedorRepository { get; }
+        INormaAbntRepository NormaAbntRepository { get; }
+        ITipoFreteRepository TipoFreteRepository { get; }
+        IVendaRecebimentoParcelaRepository VendaRecebimentoParcelaRepository { get; }
+        IVendaRecebimentoTipoRepository VendaRecebimentoTipoRepository { get; }
+        IRelacionaFaturaVendaRecebimentoTipoRepository RelacionaFaturaVendaRecebimentoTipoRepository { get; }
+        IEmpresaRepository EmpresaRepository { get; }        
+        IRegimeTributarioRepository RegimeTributarioRepository { get; }        
+        IFaturaParametroRepository FaturaParametroRepository { get; }
+        IModalidadeRepository ModalidadeRepository { get; }        
+        IAcabamentoRepository AcabamentoRepository { get; }
+        IVendaOrdemParceiroRepository VendaOrdemParceiroRepository { get; }        
+        ICodigoDDIRepository CodigoDDIRepository { get; }
+        IMoedaRepository MoedaRepository { get; }        
+        IProjetoRepository ProjetoRepository { get; }
+        IMotivoReposicaoRepository MotivoReposicaoRepository { get; }
+        IMotivoCancelamentoRepository MotivoCancelamentoRepository { get; }        
+        IObraFaseRepository ObraFaseRepository { get; }        
+        IObraOrigemRepository ObraOrigemRepository { get; }
+        IObraPadraoRepository ObraPadraoRepository { get; }        
+        IObraProjetoRepository ObraProjetoRepository { get; }        
+        IParametroRepository ParametroRepository { get; }        
+        IMedidaJumboRepository MedidaJumboRepository { get; }        
+        IClassificacaoRepository ClassificacaoRepository { get; }        
+        IDespesaRepository DespesaRepository { get; }        
+        IOperacaoRepository OperacaoRepository { get; }        
+        IContaAPagarRepository ContaAPagarRepository { get; }
+        IPagarCentroCustoDespesaRepository PagarCentroCustoDespesaRepository { get; }
+        IContaPagarLoteRepository ContaPagarLoteRepository { get; }
+        IContaPagarLoteItemRepository ContaPagarLoteItemRepository { get; }
+        ICartaoRepository CartaoRepository { get; }
+        IContaAPagarPagoRepository ContaAPagarPagoRepository { get; }
+        ICaminhaoRepository CaminhaoRepository { get; }
+        ITipoCarroceriaRepository TipoCarroceriaRepository { get; }
+        ITipoRodadoRepository TipoRodadoRepository { get; }
+        IFusoHorarioRepository FusoHorarioRepository { get; }
+        ICepBloqueadoRepository CepBloqueadoRepository { get; }
+        IChapaRepository ChapaRepository { get; }
+        IContaBancariaRepository ContaBancariaRepository { get; }
+        IMovimentoEstoqueRepository MovimentoEstoqueRepository { get; }
+        IMinimoCobrancaRepository MinimoCobrancaRepository { get; }
+        IMinimoCobrancaItemRepository MinimoCobrancaItemRepository { get; }
+        IRepresentanteRepository RepresentanteRepository { get; }
+        IContaAReceberRepository ContaAReceberRepository { get; }
+        IFluxoCaixaRepository FluxoCaixaRepository { get; }
+        IDuplicataRepository DuplicataRepository { get; }
+        IDuplicataParcelaRepository DuplicataParcelaRepository { get; }
+        IOrdemFabricacaoRepository OrdemFabricacaoRepository { get; }
+        IOrdemFabricacaoItemRepository OrdemFabricacaoItemRepository { get; }
+        IRomaneioRepository RomaneioRepository { get; }
+        IRomaneioItemRepository RomaneioItemRepository { get; }
+        IComissaoRepository ComissaoRepository { get; }
+        IMedidaParametroRepository MedidaParametroRepository { get; }
+        IOrdemFabricacaoItemTemporariaRepository OrdemFabricacaoItemTemporariaRepository { get; }
+        IPlanoDeContasRepository PlanoDeContasRepository { get; }
+        IFaturaTemporariaRepository FaturaTemporariaRepository { get; }
+        IFaturaTemporariaItemRepository FaturaTemporariaItemRepository { get; }
+        IDashBoardRepository DashBoardRepository { get; }
+        IRelacionaEmpresaSocioRepository RelacionaEmpresaSocioRepository { get; }
+        IRelacionaEmpresaFaturaParametroRepository RelacionaEmpresaFaturaParametroRepository { get; }
+        IPlanejamentoProducaoRepository PlanejamentoProducaoRepository { get; }
+        IContaAReceberPagoRepository ContaAReceberPagoRepository { get; }
+
+        void Commit();
+
+        bool NewCommit();
+
+        Task CommitAsync(CancellationToken cancellationToken = default);
+        Task ExecuteSqlRawAsync(string sql, CancellationToken cancellationToken);
+        Task RollbackAsync();
+        Task DisposeAsync();
+    }
+}

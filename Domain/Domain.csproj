@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Entities\FaturasItens\**" />
+    <EmbeddedResource Remove="Entities\FaturasItens\**" />
+    <None Remove="Entities\FaturasItens\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Entities\Financeiros\ContaAPagarPago.Designer.cs" />
+    <Compile Remove="Entities\VendasItem\Produto.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Entities\Financeiros\ContaAPagarPago.settings" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation.AspNetCore" Version="11.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SharedKernel\SharedKernel.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Commands\Veiculos\TiposCarrocerias\Atualizar\" />
+  </ItemGroup>
+
+</Project>
